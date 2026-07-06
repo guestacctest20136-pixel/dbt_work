@@ -1,0 +1,15 @@
+version: 2
+
+models:
+  - name: dim_station
+    description: "Unique list of all stations (start and end combined)"
+    columns:
+      - name: station_id
+        description: "Unique station identifier"
+        tests:
+          - unique
+          - not_null
+      - name: station_name
+        description: "Station display name"
+        tests:
+          - not_null
