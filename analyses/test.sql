@@ -1,0 +1,1 @@
+select * FROM `dbtproject-500914.dbt_citibike.citibike_trips`
