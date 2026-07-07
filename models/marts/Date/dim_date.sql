@@ -1,4 +1,5 @@
 -- models/dim_date.sql
+
 SELECT DISTINCT
     CAST(starttime AS DATE)                          AS trip_date,
     EXTRACT(YEAR  FROM starttime)                    AS year,
