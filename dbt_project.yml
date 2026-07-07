@@ -36,5 +36,11 @@ clean-targets:         # directories to be removed by `dbt clean`
 # using the `{{ config(...) }}` macro.
 
 models:
-  marts:
-    +materialized: table
+  dbt_work:        # ← project name (matches folder name in file explorer)
+    marts:
+      Bike:          # match exact folder name/case
+        +materialized: table
+      Date:
+        +materialized: table
+      Station:
+        +materialized: table
