@@ -1,0 +1,22 @@
+version: 2
+
+models:
+  - name: stg_start_station
+    description: "Unique list of all start stations"
+    columns:
+      - name: station_id
+        description: "Unique station identifier"
+      - name: station_name
+        description: "Station display name"
+        tests:
+          - not_null
+      - name: latitude
+        description: "Latitude Station display name"
+        tests:
+          - not_null
+      - name: longitude
+        description: "Longitude Station display name"
+        tests:
+          - not_null
+      - name: geopoint
+        description: "Geopoint Station display name"
