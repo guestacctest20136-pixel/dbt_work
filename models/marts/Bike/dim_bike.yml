@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: dim_bike
+    description: "Bike catalogue"
+    columns:
+      - name: bike_id 
+        description: "Bike ID"
+        tests:
+          - unique
+          - not_null
