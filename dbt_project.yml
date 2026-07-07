@@ -46,3 +46,5 @@ models:
         +materialized: table
       stg_start_station:
         +materialized: table
+      stg_end_station:
+        +materialized: table
